@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <title> Joaquin De Sosa | Frontend Developer</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <!-- start header -->
+    <header class="fixed">
+        <div class="container">
+            <div class="row">
+                <div class="brand logo">
+                    <a href="#">
+                        <span>&lt;</span>JDS<span>/&gt;</span>
+                    </a>
+                </div>
+                <div class="ham-burger">
+                    <a href="#menu" class="header__menu hide-desktop">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#home" class="inicio active">Inicio</a></li>
+                        <li><a href="#aboutme" class="aboutme">Sobre Mí</a></li>
+                        <li><a href="#portafolio" class="portafolio">Proyectos</a></li>
+                        <li><a href="#skills" class="skills">Habilidades</a></li>
+                        <li><a href="#experience" class="experience">Experiencia</a></li>
+                        <li><a href="#studies" class="studies">Estudios</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mobile-nav">
+        <div class="nav-container">
+            <li><a href="#home" class="inicio active"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#aboutme" class="aboutme"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#portafolio" class="portafolio"><i class="fa-solid fa-laptop-code"></i></a></li>
+            <li><a href="#skills" class="skills"><i class="fa-solid fa-star"></i></a></li>
+            <li><a href="#experience" class="experience"><i class="fa-solid fa-briefcase"></i></a></li>
+            <li><a href="#studies" class="studies"><i class="fa-solid fa-graduation-cap"></i></a></li>
+        </div>
+    </section>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row full-screen">
+                <div class="home-content">
+                    <div class="block">
+                        <h1>JOAQUIN <span>DE SOSA</span></h1>
+                        <h3>Frontend Developer</h3>
+
+                        <div class="button-container">
+                            <div class="block-a">
+                                <a
+                                    href="#aboutme">VER MÁS
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                            <div class="block-a">
+                                <a
+                                    href="./file/joaquin-de-sosa-cv.pdf" target="_blank">DESCARGAR CV
+                                    <i class="fa-solid fa-file-arrow-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me" id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>Sobre mi</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-content">
+                    <div class="row">
+                        <div class="img">
+                            <img src="img/avatar.png">
+                        </div>
+                        <div class="text">
+                            <h6><span>Desarrollador front-end</span> ubicado en <span>Uruguay</span></h6>
+                            <p>
+                                Apasionado por la <span>tecnología</span> y el <span>diseño</span> desde pequeño.
+                            </p>
+                            <p>
+                                Luego de finalizar el bachillerato técnologico en 2018 decidí que quería <span>viajar</span> antes de seguir mi carrera y esa idea me llevo a trabajar casi 2 años como <span>Bartender</span> en Uruguay para luego terminar viviendo 8 meses en <span>Nueva Zelanda</span> haciendo café entre montañas nevadas.
+                            </p>
+                            <p>
+                                Volví a Uruguay al comenzar la pandemia reencontrandome con el mundo <span>IT profesional</span> a través de <span>Jóvenes a Programar</span>. Al finalizar el curso tuve la oportunidad de ingresar a <span>Tata Consultancy Services</span> y capacitarme como <span>Salesforce Developer</span>.
+                            </p>
+                            <p>
+                                En paralelo estoy cursando la carrera de <span>Certified Tech Developer</span> en Digital House con el objetivo de en un futuro dedicarme plenamente al <span>desarrollo web</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portafolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>Proyectos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="filter-buttons">
+                    <ul id="filter-btns">
+                        <li class="active" data-target="all">Todos</li>
+                        <li data-target="front">Frontend</li>
+                        <li data-target="web">Wordpress</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-gallery" id="grid">
+                    <div class="item" data-id="front">
+                        <div class="inner">
+                            <img src="img/wordle.front.png" alt="myhome">
+                            <div class="overlay">
+                                <h4>Wordle</h4>
+                                <p>HTML - CSS - JS</p>
+                                <a href="https://joaquinzxy.github.io/wordler-game/" target="_blank">
+                                    Vér Página
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="front">
+                        <div class="inner">
+                            <img src="img/myhome-front.png" alt="myhome">
+                            <div class="overlay">
+                                <h4>My Home</h4>
+                                <p>HTML - CSS - JS</p>
+                                <a href="https://joaquinzxy.github.io/myhome-website/" target="_blank">
+                                    Vér Página
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="front">
+                        <div class="inner">
+                            <img src="img/myweather-front.png" alt="myweather">
+                            <div class="overlay">
+                                <h4>My Weather</h4>
+                                <p>HTML - JS - API</p>
+                                <a href="https://joaquinzxy.github.io/myWeather/" target="_blank">
+                                    Vér Página
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="./img/web-tila.png" alt="tila">
+                            <div class="overlay">
+                                <h4>TILA</h4>
+                                <p>Wordpress - eCommerce - eLearning</p>
+                                <a href="https://www.tila.uy" target="_blank">
+                                    Vér Página
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="img/web-motadeco.png" alt="motadeco">
+                            <div class="overlay">
+                                <h4>MOTADECO</h4>
+                                <p>Wordpress - eCommerce - eLearning</p>
+                                <a href="https://www.motadeco.com"
+                                    target="_blank">
+                                    Vér Página
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="web">
+                        <div class="inner">
+                            <img src="img/web-lobonia.png" alt="guitar">
+                            <div class="overlay">
+                                <h4>Lobonia</h4>
+                                <p>Wordpress - eCommerce</p>
+                                <a href="https://www.lobonia.com" target="_blank">
+                                    Vér Página
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills info-container" id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>Habilidades</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="skill-content">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-object-ungroup"></i>
+                        </div>
+                        <h5>Maquetación</h5>
+                        <p>HTML - CSS - FIGMA</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h5>Desarrollo</h5>
+                        <p>JS - REACT - TYPESCRIPT
+                        </p>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h5>Bases de datos</h5>
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="job-experience info-container" id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>Experiencia laboral</h1>
+                </div>
+
+                <div class="row">
+                    <div class="job-studies-content">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-brands fa-salesforce"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>02/22 - Actualidad</h5>
+                                <h3>Salesforce Developer</h3>
+                                <h4>TCS - Uruguay</h4>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-desktop"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>12/20 - 01/22</h5>
+                                <h3>Operador informático</h3>
+                                <h4>OSE - Uruguay</h4>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-brands fa-wordpress"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>05/19 - 2/22</h5>
+                                <h3>Maquetador WordPress</h3>
+                                <h4>Freelancer</h4>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-solid fa-martini-glass-citrus"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>09/19 - 03/20</h5>
+                                <h3>Bartender/barista</h3>
+                                <h4>The Landing Bar - Nueva Zelanda</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="studies info-container" id="studies">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>Estudios</h1>
+                </div>
+                <div class="row">
+                    <div class="job-studies-content">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-brands fa-salesforce"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>04/22 - Actualidad</h5>
+                                <h3>Certified Tech Developer</h3>
+                                <h4>Digital House</h4>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>05/21 - 12/21</h5>
+                                <h3>Frontend Developer</h3>
+                                <h4>Jóvenes a programar</h4>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <div class="info-content">
+                                <h5>03/14 - 10/18</h5>
+                                <h3>Bachiller informático</h3>
+                                <h4>ESI Buceo</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-info">
+            <h4>Contacto: <a href="mailto:joaquindesosa@gmail.com">joaquindesosa@gmail.com</a> </h4>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
